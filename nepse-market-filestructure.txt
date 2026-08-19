@@ -1,0 +1,83 @@
+nepse-market-report/
+│
+├── data/
+│   ├── raw/
+│   │   ├── stock_data/
+│   │   ├── floorsheet/
+│   │   ├── floorsheet_data/
+│   │   ├── market_summary/
+│   │   ├── sector_summary/
+│   │   └── historic_stock_data/
+│   │
+│   └── processed/
+│       ├── stock_data/
+│       ├── floorsheet/
+│       ├── market_summary/
+│       ├── sector_summary/
+│       └── historic_stock_data/
+│
+├── src/
+│   ├── scraper/
+│   │   ├── __init__.py
+│   │   ├── nepse_scraper.py
+│   │   ├── stock_scraper.py
+│   │   ├── floorsheet_scraper.py
+│   │   ├── market_summary_scraper.py
+│   │   ├── sector_summary_scraper.py
+│   │   └── historical_stock_scraper.py
+│   │
+│   ├── cleaning/
+│   │   ├── __init__.py
+│   │   ├── clean_stock_data.py
+│   │   ├── clean_floorsheet.py
+│   │   ├── clean_market_summary.py
+│   │   ├── clean_sector_summary.py
+│   │   └── validation.py
+│   │
+│   ├── database/
+│   │   ├── __init__.py
+│   │   ├── snowflake_connection.py
+│   │   ├── snowflake_operations.py
+│   │   └── schema.sql
+│   │
+│   ├── analysis/
+│   │   ├── __init__.py
+│   │   ├── market_analysis.py
+│   │   ├── stock_analysis.py
+│   │   ├── sector_analysis.py
+│   │   └── technical_analysis.py
+│   │
+│   ├── reports/
+│   │   ├── __init__.py
+│   │   ├── generate_report.py
+│   │   ├── charts.py
+│   │   └── templates/
+│   │       └── daily_report.html
+│   │
+│   └── email/
+│       ├── __init__.py
+│       └── send_report.py
+│
+├── scripts/
+│   └── run_daily_report.py
+│
+├── tests/
+│   ├── test_scraper.py
+│   ├── test_cleaning.py
+│   ├── test_analysis.py
+│   └── test_database.py
+│
+├── reports/
+│   ├── daily/
+│   └── charts/
+│
+├── notebooks/
+│   ├── scraping/
+│   ├── cleaning/
+│   └── analysis/
+│
+├── .env.example
+├── .gitignore
+├── requirements.txt
+├── README.md
+└── NEPSE_README.md
