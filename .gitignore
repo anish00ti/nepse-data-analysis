@@ -11,3 +11,4 @@ reports/daily/*
 !reports/daily/.gitkeep
 reports/charts/*
 !reports/charts/.gitkeep
+src/scrapper/
